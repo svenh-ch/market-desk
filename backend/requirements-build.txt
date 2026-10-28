@@ -1,0 +1,6 @@
+# Nur zum Bauen der Mac-App und für Tests nötig
+-r requirements.txt
+pyinstaller>=6.11
+pillow>=10.0
+httpx>=0.27
+pytest>=8.0

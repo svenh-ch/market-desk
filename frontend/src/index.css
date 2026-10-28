@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #080c14;
+  color: #e2e8f0;
+  font-family: 'SF Mono', Menlo, ui-monospace, monospace;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #1c2333; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #2d3748; }
+
+/* Panel border utility */
+.panel {
+  @apply bg-terminal-panel border border-terminal-border rounded;
+}
+
+/* Positive / negative color classes */
+.text-up   { @apply text-terminal-green; }
+.text-down { @apply text-terminal-red; }
+
+/* Terminal cursor blink */
+.cursor-blink::after {
+  content: '█';
+  @apply animate-blink text-terminal-orange ml-0.5;
+}
+
+/* Selection highlight */
+::selection { background: #f59e0b33; color: #f59e0b; }

@@ -1,0 +1,16 @@
+# Abhängigkeiten / Build
+backend/.venv/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+# Geheimnisse und lokale Daten
+.env
+backend/.env
+*.db
+# macOS
+.DS_Store
+
+# App-Bau
+build/
+desktop/icon.iconset/

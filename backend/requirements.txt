@@ -1,0 +1,17 @@
+# Server
+fastapi==0.115.6
+uvicorn==0.32.1
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-dotenv==1.0.1
+sqlalchemy==2.0.36
+# Marktdaten & Berichte
+yfinance>=1.7.0
+pandas>=2.2,<3.0     # pandas 3 ist (Okt. 2026) noch nicht mit yfinance kompatibel
+numpy>=2.0
+requests>=2.32
+beautifulsoup4>=4.12
+lxml>=5.0
+xlrd>=2.0          # Damodaran-Tabellen (.xls)
+# Mac-App (natives Fenster)
+pywebview>=5.3
